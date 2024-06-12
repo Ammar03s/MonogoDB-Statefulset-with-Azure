@@ -1,0 +1,44 @@
+# from pymongo import MongoClient
+
+# # Use the same MongoDB connection URI
+# client = MongoClient("mongodb://localhost:27017/")
+
+# db = client.Bookstore
+# books_collection = db.book
+
+#         # Perform a test query
+# try:
+#     count = books_collection.count_documents({})
+#     print(f"Connection successful. Number of documents in the collection: {count}")
+# except Exception as e:
+#  print(f"Error connecting to MongoDB: {e}")
+'''
+from pymongo import MongoClient
+
+def test_mongodb_connection():
+    client = MongoClient("mongodb-0://mongodb:27017/")
+    try:
+        # Attempt to list databases to check connection
+        databases = client.list_database_names()
+        print("Connected successfully. Databases:", databases)
+    except Exception as e:
+        print("Failed to connect to MongoDB:", e)
+
+if __name__ == "__main__":
+    test_mongodb_connection()'''
+from pymongo import MongoClient
+
+client = MongoClient("mongodb://mongodb:27017/")
+db = client.Bookstore
+book_collection = db.books
+
+try:
+    count = book_collection.count_documents({})
+    print(f"Connection successful. Number of documents in the collection: {count}")
+    if count > 0:
+        first_book = book_collection.find_one({})
+        print("First document:", first_book)
+    else:
+        print("No documents found in the collection.")
+except Exception as e:
+    print(f"Error connecting to MongoDB: {e}")
