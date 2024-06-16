@@ -9,6 +9,6 @@ This project demonstrates deploying a containerized python application with Flas
 - **Docker**: For containerizing the Python application.
 - **MongoDB**: NoSQL database for storing application data.
 - **Postman**: API testing tool.
-- **VSCode**: Code editor for developing the Python application.
+- **VSCode**: for coding and developing our application
 - **mongoimport**: Tool for importing data into MongoDB.
 
