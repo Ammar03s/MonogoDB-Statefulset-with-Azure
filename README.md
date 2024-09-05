@@ -1,8 +1,8 @@
-# MongoDB on Kubernetes: Containerized Flask App for a Bookstore
+# MongoDB on Kubernetes: Containerized Flask App for a Bookstore Database
 
-This project demonstrates deploying a containerized python application with Flask using MongoDB on Kubernetes Azure Kubernetes Service (AKS) for a bookstore dataset,  covering containerization, deployment, and service discovery.
+This project demonstrates deploying a containerized python application with Flask using MongoDB on Kubernetes Azure Kubernetes Service (AKS) for a bookstore Database,  covering containerization, deployment, and service discovery.
 
-## Tools and Technologies
+## Tools used
 
 - **Azure AKS**: Azure Kubernetes Service for deploying and managing the Kubernetes cluster.
 - **Azure CLI**: Command-line interface for managing Azure resources.
@@ -11,4 +11,3 @@ This project demonstrates deploying a containerized python application with Flas
 - **Postman**: API testing tool.
 - **VSCode**: for coding and developing our application
 - **mongoimport**: Tool for importing data into MongoDB.
-
